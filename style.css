@@ -18,11 +18,15 @@ nav {
     position: relative;
     display: flex;
   }
-  nav a {
+  nav a{
     position: relative;
     padding: 5px 20px;
     margin: 0px 20px;
     font-size: 2rem;
+    text-decoration: none;
+    color:#000;
+  }
+  nav a:hover{
     text-decoration: none;
   }
   
