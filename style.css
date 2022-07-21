@@ -14,13 +14,44 @@ body {
 }
 
 /********************* navbar *********************/
-.social-part .fa{
-    padding-right:20px;
-}
-ul li a{
-    margin-right: 20px;
+.nav-item::after{
+    content:'';
+    display:block;
+    width:0px;
+    height:4px;
+    background:#ff0000;
+    transition: 0.2s;
+    margin-top:-10px;
 }
 
+.nav-item:hover::after{width:100%;}
+
+
+.nav-link{padding:15px 5px;transition:0.2s;}
+
+.navbar-nav .nav-link {
+    
+    color:#000;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.navbar-nav .active > .nav-link{
+  
+    width:100%;
+    height:51px;
+    
+  border-bottom: .25rem solid transparent;
+  border-bottom-color: #ed4137;
+   
+}
+
+
+
+
+ul li a {
+    margin-right: 20px;
+}
 
 /********************* button-1 *********************/
 
@@ -70,7 +101,8 @@ ul li a{
     background: red;
 }
 
-.red_btn:hover:after, .red_btn:active:after {
+.red_btn:hover:after,
+.red_btn:active:after {
     width: 100%;
 }
 
@@ -118,7 +150,8 @@ ul li a{
     margin-right: 25%;
 }
 
-.form_box_shadow .form-group label, input::placeholder {
+.form_box_shadow .form-group label,
+input::placeholder {
     font-family: "Microsoft New Tai Lue";
 }
 
