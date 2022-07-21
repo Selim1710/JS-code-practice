@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: #F3F7FF;
+}
+
+.left_column {
+    height: 700px;
+    width: 350px;
+}
+
+/********************* navbar *********************/
+.social-part .fa{
+    padding-right:20px;
+}
+ul li a{
+    margin-right: 20px;
+}
+
+
+/********************* button-1 *********************/
+
+.red_btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.red_btn {
+    border: 3px solid red;
+    color: red;
+}
+
+.red_btn:hover {
+    color: #fff;
+}
+
+.red_btn::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.red_btn:after {
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: red;
+}
+
+.red_btn:hover:after, .red_btn:active:after {
+    width: 100%;
+}
+
+/********************* button-2 *********************/
+.btn_grow {
+    margin: 4%;
+}
+
+.btn_grow:hover {
+    transform: scale(3.3);
+}
+
+/********************* button-3 *********************/
+.btn_animate {
+    animation: moveBorder 2s infinite;
+    padding: 5%;
+    border: 10px solid greenyellow;
+}
+
+@keyframes moveBorder {
+    from {
+        border-color: red;
+    }
+
+    to {
+        border-color: blue;
+
+    }
+}
+
+/********************* form bootstrap *********************/
+
+.My_form {
+    background: linear-gradient(to left, #3a6186, #89253e);
+    color: #F3F7FF;
+    text-transform: capitalize;
+}
+
+
+/********************* form with box shadow *********************/
+
+.form_box_shadow {
+    background: #fff;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.form_box_shadow .form-group label, input::placeholder {
+    font-family: "Microsoft New Tai Lue";
+}
+
+.shadow_input {
+    background: #fff;
+    color: #525865;
+    border-radius: 20px;
+    border: 1px solid #d1d1d1;
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+    font-size: 1em;
+    line-height: 1.45;
+    outline: none;
+    padding: 0.6em 1.45em 0.7em;
+    -webkit-transition: .18s ease-out;
+    -moz-transition: .18s ease-out;
+    -o-transition: .18s ease-out;
+    transition: .18s ease-out;
+}
+
+.shadow_input:hover {
+    box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.shadow_input:focus {
+    color: #4b515d;
+    border: 1px solid #B8B6B6;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+/********************* new *********************/
