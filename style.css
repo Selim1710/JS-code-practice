@@ -48,6 +48,29 @@ ul li a {
     margin-right: 20px;
 }
 
+/********************* animation *********************/
+#pot {
+    position: absolute;
+    animation: linear infinite;
+    animation-name: textAnimation;
+    animation-duration: 25s;
+    font-size: 1.5rem;
+  }
+  @keyframes textAnimation {
+    0% {
+      left: 0;
+      border: 5px solid red;
+    }
+    40% {
+      left: 100%;
+      border: 5px solid green;
+    }
+    100% {
+      left: 0; 
+      border: 5px solid blue;
+    }
+  }
+
 /********************* button-1 *********************/
 
 .red_btn {
