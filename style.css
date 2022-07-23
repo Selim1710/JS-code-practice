@@ -49,8 +49,11 @@ ul li a {
 }
 
 /********************* animation *********************/
+.text_animation{
+    border-radius: 15px;
+}
 #pot {
-    position: absolute;
+    position: relative;
     animation: linear infinite;
     animation-name: textAnimation;
     animation-duration: 25s;
@@ -59,15 +62,12 @@ ul li a {
   @keyframes textAnimation {
     0% {
       left: 0;
-      border: 5px solid red;
     }
     40% {
       left: 100%;
-      border: 5px solid green;
     }
     100% {
       left: 0; 
-      border: 5px solid blue;
     }
   }
 
