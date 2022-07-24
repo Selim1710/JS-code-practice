@@ -45,7 +45,9 @@ ul li a {
     margin-right: 20px;
 }
 
-/********************* animation *********************/
+/************************** animation **************************/
+
+/* notice */
 .text_animation {
     border-radius: 15px;
 }
@@ -72,7 +74,7 @@ ul li a {
     }
 }
 
-/********************* Animated Smoke Test *********************/
+/* Animated Smoke Text */
 .animated_smoke_text{
     background: black;
     color: white;
@@ -110,8 +112,9 @@ ul li a {
 }
 /* now goto script file */
 
-/********************* button-1 *********************/
+/*************************** button ***************************/
 
+/* button-1 */
 .red_btn {
     border: none;
     font-family: inherit;
@@ -163,35 +166,99 @@ ul li a {
     width: 100%;
 }
 
-/********************* button-2 *********************/
-.btn_grow {
-    margin: 4%;
-}
+/* button-2 */
 
 .btn_grow:hover {
+    transition: 3s;
     transform: scale(3.3);
 }
 
-/********************* button-3 *********************/
-.btn_animate {
-    animation: moveBorder 2s infinite;
-    padding: 5%;
-    border: 10px solid greenyellow;
+/********* button-3 *********/
+.neon_light_button{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.neon_light_button a{
+    position:relative;
+    display: inline-block;
+    padding: 15px 30px;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: #2c3e50;
+    color:#2196f3;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border:none;
+    transition: 0.2s;
 }
 
-@keyframes moveBorder {
-    from {
-        border-color: red;
-    }
-
-    to {
-        border-color: blue;
-
-    }
+.neon_light_button a:hover{
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
 }
 
-/********************* form bootstrap *********************/
+.neon_light_button a span {
+    position: absolute;
+    display:block;
+}
+.neon_light_button a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width:50%;
+    height:2px;
+    background: linear-gradient(90deg,transparent,#2196f3);
+}
+.neon_light_button a:hover span:nth-child(1) {
+    left:100%;
+    transition: 1s;
+}
+.neon_light_button a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width:50%;
+    height:2px;
+    background: linear-gradient(270deg,transparent,#2196f3);
+}
+.neon_light_button a:hover span:nth-child(3) {
+    right:100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
 
+.neon_light_button a span:nth-child(2) {
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#2196f3);
+}
+.neon_light_button a:hover span:nth-child(2) {
+    top:100%;
+    transition: 1s;
+    transition-delay: 0.25;
+
+}
+
+.neon_light_button a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width:2px;
+    height:50%;
+    background: linear-gradient(360deg,transparent,#2196f3);
+}
+.neon_light_button a:hover span:nth-child(4) {
+    bottom:100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/************************** form **************************/
+
+/* form-1 */
 .My_form {
     background: linear-gradient(to left, #3a6186, #89253e);
     color: #F3F7FF;
@@ -199,7 +266,7 @@ ul li a {
 }
 
 
-/********************* form with box shadow *********************/
+/* form with box shadow */
 
 .form_box_shadow {
     background: #fff;
@@ -238,4 +305,4 @@ input::placeholder {
     box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
 }
 
-/********************* new *********************/
+/************************** new **************************/
