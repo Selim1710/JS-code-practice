@@ -8,29 +8,26 @@ body {
     background: #F3F7FF;
 }
 
-.left_column {
-    height: 700px;
-    width: 350px;
-}
-
 /********************* navbar *********************/
 nav {
     position: relative;
     display: flex;
-  }
-  nav a{
+}
+
+nav a {
     position: relative;
     padding: 5px 20px;
     margin: 0px 20px;
     font-size: 2rem;
     text-decoration: none;
-    color:#000;
-  }
-  nav a:hover{
+    color: #000;
+}
+
+nav a:hover {
     text-decoration: none;
-  }
-  
-  nav .marker {
+}
+
+nav .marker {
     left: 0;
     position: absolute;
     height: 4px;
@@ -39,7 +36,7 @@ nav {
     bottom: -8px;
     border-radius: 4px;
     transition: 0.3s;
-  }
+}
 
 
 
@@ -49,27 +46,69 @@ ul li a {
 }
 
 /********************* animation *********************/
-.text_animation{
+.text_animation {
     border-radius: 15px;
 }
+
 #pot {
     position: relative;
-    animation: linear infinite;
-    animation-name: textAnimation;
+    /* animation: linear infinite; */
+    /* animation-name: textAnimation; */
     animation-duration: 25s;
     font-size: 1.5rem;
-  }
-  @keyframes textAnimation {
+}
+
+@keyframes textAnimation {
     0% {
-      left: 0;
+        left: 0;
     }
+
     40% {
-      left: 100%;
+        left: 100%;
     }
+
     100% {
-      left: 0; 
+        left: 0;
     }
-  }
+}
+
+/********************* Animated Smoke Test *********************/
+.animated_smoke_text{
+    background: black;
+    color: white;
+}
+.smokeText {
+    font-size: 1.8rem;
+    position: relative;
+    user-select: none;
+}
+
+.smokeText span{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.smokeText .active{
+    animation:smoke 2s linear forwards;
+    transform-origin: bottom;
+}
+@keyframes smoke {
+    0%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+    }
+    50%{
+        opacity: 1;
+        pointer-events: none;
+    }
+    100%{
+        opacity: 0;
+        filter: blur(20px);
+        transform: translateX(300px) translateY(-300px) rotate(720deg) scale(4);
+    }
+}
+/* now goto script file */
 
 /********************* button-1 *********************/
 

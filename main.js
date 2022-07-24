@@ -13,20 +13,18 @@ item.forEach((link) => {
   });
 });
 
-////////////////////////     end-navbar      ////////////////////////
+////////////////////////     Animated Smoke Test      ////////////////////////
+window.onload = function () {
+  // split text into letters
+  var text = document.querySelector('.smokeText');
+  text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
 
-// arrar short()
-let elements = ['bananna', 'apple', 'cat', 'mouse', 'cannon'];
-elements.sort();
-document.getElementById('array-2').innerHTML = elements;
+  // now active class on hovered <span> tag
+  const letters = document.querySelectorAll('span');
 
-// JavaScript Math
-
-let value = 5.5;
-
-document.getElementById('round_vlaue').innerHTML = Math.round(value);
-document.getElementById('floor_vlaue').innerHTML = Math.floor(value);
-document.getElementById('ceil_value').innerHTML = Math.ceil(value);
-
-
-////////////////////////     button-1        ////////////////////////
+  for (let i=0; i<letters.length; i++) {
+    letters[i].addEventListener("mouseover",function(){
+      letters[i].classList.add('active')
+    })
+  }
+}
