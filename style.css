@@ -120,7 +120,27 @@ ul li a {
     }
 }
 
-/* Animated Smoke Text */
+/* notice-2 */
+.anim {
+    animation: show 10s ease-in-out;
+  }
+  
+  @keyframes show {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .hid {
+    opacity: 0;
+}
+  /*  goto js file  */
+
+/****** Animated Smoke Text ******/
 .animated_smoke_text {
     background: black;
     color: white;
