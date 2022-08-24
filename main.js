@@ -1,3 +1,15 @@
+
+////////////////////////     Javascript practice     ////////////////////////
+var subElement = document.getElementById("word");
+
+
+  console.log(subElement);
+
+
+
+
+
+
 ////////////////////////     nav-1      ////////////////////////
 let marker = document.querySelector(".marker");
 let item = document.querySelectorAll("nav a");

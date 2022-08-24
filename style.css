@@ -2,13 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'molla'; */
 }
 
 body {
     background: #F3F7FF;
 }
 
+/********************* cancel price *********************/
+
+#cancel_price{
+    text-decoration-line: line-through;
+}
 /********************* navbar *********************/
 
 /* nav-1 */
