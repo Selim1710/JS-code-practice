@@ -1,10 +1,16 @@
 
-////////////////////////     Javascript practice     ////////////////////////
-var subElement = document.getElementById("word");
+////////////////////////     product details     ////////////////////////
 
+var subImages = document.querySelector(".sub-img").children;
 
-  console.log(subElement);
+function changeImage(event) {
+  document.querySelector(".pro-image").src = event.children[0].src;
 
+  for(let i=0;i<subImages.length;i++){
+    subImages[i].classList.remove('active');
+  }
+  event.classList.add("active");
+}
 
 
 

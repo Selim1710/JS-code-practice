@@ -19,60 +19,73 @@
     <br><br>
     <section class="Product-Details">
         <h2 class="text-center"> Product Details </h2><br>
-            <div class="container">
-                <div class="col-lg-12  p-3 main-section bg-white">
-                    <div class="row">
-                        <div class="col-lg-6 left-side-product-box pb-3">
-                            <img src="images/p1.png" class=" p-3">
-                            <span class="sub-img">
-                                <img src="images/p2.jpg" class="p-2">
-                                <img src="images/p2.jpg" class="p-2">
-                            </span>
+        <div class="container">
+            <div class="col-lg-12  p-3 main-section bg-white">
+                <div class="row">
+                    <div class="col-lg-6 left-side-product-box pb-3">
+                        <!-- main image -->
+                        <div class="main-image">
+                            <img src="images/p1.png" class="pro-image p-3">
                         </div>
-                        <div class="col-lg-6 text-capitalize">
-                            <div class="right-side-pro-detail p-3">
-                                <div class="row">
-                                    <div class="model col-lg-12 font-italic">
-                                        <h2> Product model and &nbsp; name</h2>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <p class=" p-0 price-pro">Price: 100 ৳</p>
-                                        <hr class="p-0 ">
-                                    </div>
-                                    <div class="col-lg-12 pt-2">
-                                        <h5>Product Detail</h5>
-                                        <span>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nemo eos, ab libero veniam ipsa itaque quisquam quam magni pariatur fuga quis deserunt voluptas odit, laudantium omnis suscipit voluptatem temporibus.
-                                        </span>
-                                        <hr class=" pt-2 mt-2">
-                                    </div>
-                                    <!-- stock -->
-                                    <div class="col-lg-12">
-                                      
-                                        <p class="tag-section"><strong>Availability : </strong>
-                                            <span class="bg-danger text-white p-1 rounded">
-                                            Out of Stock 
+                        <!-- sub-image -->
+                        <span class="sub-img">
+                            <div class="box" onclick="changeImage(this)">
+                                <img src="images/p1.png" class="p-2">
+                            </div>
+                            <div class="box" onclick="changeImage(this)">
+                                <img src="images/p2.jpg" class="p-2">
+                            </div>
+                            <div class="box" onclick="changeImage(this)">
+                                <img src="images/p3.jpg" class="p-2">
+                            </div>
+                        </span>
+                    </div>
+                    <div class="col-lg-6 text-capitalize">
+                        <div class="right-side-pro-detail p-3">
+                            <div class="row">
+                                <div class="model col-lg-12 font-italic">
+                                    <h2> Product model and &nbsp; name</h2>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p class=" p-0 price-pro">Price: 100 ৳</p>
+                                    <hr class="p-0 ">
+                                </div>
+                                <div class="col-lg-12 pt-2">
+                                    <h5>Product Detail</h5>
+                                    <span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nemo eos, ab
+                                        libero veniam ipsa itaque quisquam quam magni pariatur fuga quis deserunt
+                                        voluptas odit, laudantium omnis suscipit voluptatem temporibus.
+                                    </span>
+                                    <hr class=" pt-2 mt-2">
+                                </div>
+                                <!-- stock -->
+                                <div class="col-lg-12">
+
+                                    <p class="tag-section"><strong>Availability : </strong>
+                                        <span class="bg-danger text-white p-1 rounded">
+                                            Out of Stock
                                         </span>
                                     </p>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <h6>Quantity :</h6>
-                                    </div>
-                                    <div class="col-lg-12 mt-3">
-                                        <div class="row ">
-                                            <div class="col-lg-6 ">
-                                                <form action="#" method="POST" enctype="multipart/form-data">
-                                                    <input type="number" name="quantity" class="form-control text-center w-100" value="">
-                                                    <button type="submit" class="btn btn-success w-100 text-center mt-2">
-                                                        Buy Now
-                                                    </button>
-                                                </form>
-                                            </div>
-                                            <div class="col-lg-6 pb-2 mt-5 ">
-                                                <a href="#" class="btn btn-info w-100">
-                                                    Add To Cart
-                                                </a>
-                                            </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <h6>Quantity :</h6>
+                                </div>
+                                <div class="col-lg-12 mt-3">
+                                    <div class="row ">
+                                        <div class="col-lg-6 ">
+                                            <form action="#" method="POST" enctype="multipart/form-data">
+                                                <input type="number" name="quantity"
+                                                    class="form-control text-center w-100" value="">
+                                                <button type="submit" class="btn btn-success w-100 text-center mt-2">
+                                                    Buy Now
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-6 pb-2 mt-5 ">
+                                            <a href="#" class="btn btn-info w-100">
+                                                Add To Cart
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -81,6 +94,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section><br><br><br><br><br>
     <!--------------------- navbar --------------------->
     <!-- nav-1 -->
