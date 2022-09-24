@@ -1,4 +1,3 @@
-
 ////////////////////////     product details     ////////////////////////
 
 var subImages = document.querySelector(".sub-img").children;
@@ -11,10 +10,6 @@ function changeImage(event) {
   }
   event.classList.add("active");
 }
-
-
-
-
 
 ////////////////////////     nav-1      ////////////////////////
 let marker = document.querySelector(".marker");

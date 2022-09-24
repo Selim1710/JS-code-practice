@@ -38,6 +38,7 @@ body {
 
 .left-side-product-box .sub-img .active {
     border: 1px solid #7f8c8d;
+    border-width: 2px;
 }
 
 .right-side-pro-detail span {
