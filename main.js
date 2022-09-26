@@ -1,11 +1,27 @@
 ////////////////////////     product details     ////////////////////////
 
+// zoom image
+var mainImage = document.getElementById("mainImage");
+var modal = document.getElementById("modalResult");
+var resultImage = document.getElementById("resultImage");
+
+mainImage.onclick = function () {
+  modal.style.display = 'block';
+  resultImage.src = this.src;
+}
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+  modal.style.display = "none";
+}
+
+// change image
 var subImages = document.querySelector(".sub-img").children;
 
 function changeImage(event) {
   document.querySelector(".pro-image").src = event.children[0].src;
 
-  for(let i=0;i<subImages.length;i++){
+  for (let i = 0; i < subImages.length; i++) {
     subImages[i].classList.remove('active');
   }
   event.classList.add("active");
