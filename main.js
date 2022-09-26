@@ -73,20 +73,3 @@ var interval = setInterval(function () {
   animate(offset);
   offset++;
 }, 100);
-
-
-////////////////////////     Animated Smoke Test      ////////////////////////
-window.onload = function () {
-  // split text into letters
-  var text = document.querySelector('.smokeText');
-  text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
-
-  // now active class on hovered <span> tag
-  const letters = document.querySelectorAll('span');
-
-  for (let i = 0; i < letters.length; i++) {
-    letters[i].addEventListener("mouseover", function () {
-      letters[i].classList.add('active')
-    })
-  }
-}
